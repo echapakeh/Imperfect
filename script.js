@@ -5,8 +5,8 @@ const CLAN = {
   tag: '#2ABCD9XY',
   logo: 'logo/klan.png', // logo klan utama (tampil di dalam perisai)
   req: 'Town Hall 12 ke atas, aktif war, dan donasi rutin. Semua pemain yang mau belajar kami terima.',
-  discord: '#', // ganti dengan link undangan Discord
-  whatsapp: '#', // ganti dengan link grup WhatsApp
+  whatsapp: 'https://wa.me/62812XXXXXXXX', // nomor admin (diawali 62, tanpa 0 / + / spasi)
+  waGroup: 'https://chat.whatsapp.com/KODEUNDANGAN', // link undangan grup WhatsApp
   allies: [
     { name: 'Macan Putih', info: 'Klan sekutu · Level 15', url: '#', logo: 'logo/macan-putih.png' },
     { name: 'Rajawali Muda', info: 'Klan sekutu · Level 12', url: '#', logo: 'logo/rajawali-muda.png' },
@@ -29,7 +29,7 @@ const CLAN = {
 // Format: "Nama|Jabatan|Town Hall|Trofi"
 const MEMBERS = `Prabowo|Leader|16|5420
 Gibran|Co-Leader|16|5188
-Teddy |Co-Leader|15|4975
+Teddy|Co-Leader|15|4975
 Dimas Arya|Elder|16|4890
 Rizky Maulana|Elder|15|4802
 Putri Ayu|Elder|15|4760
@@ -92,8 +92,25 @@ $('clanName').textContent = CLAN.name;
 $('motto').textContent = '“' + CLAN.motto + '”';
 $('req').textContent = CLAN.req;
 $('slogo').src = CLAN.logo;
-$('dc').href = CLAN.discord;
-$('wa').href = CLAN.whatsapp;
+
+// Tombol WhatsApp (admin + grup)
+[
+  ['wa', CLAN.whatsapp],
+  ['wag', CLAN.waGroup],
+].forEach(([id, url]) => {
+  const a = $(id);
+  if (!a) return;
+  a.href = url;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  // Kalau link masih placeholder, beri tahu admin bukannya diam saja
+  if (!url || url === '#' || /XXXX|KODEUNDANGAN/.test(url)) {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      $('copyMsg').textContent = 'Link WhatsApp belum diisi. Edit di script.js bagian CLAN.';
+    });
+  }
+});
 
 $('allies').innerHTML =
   '<p>Klan sekutu kami</p>' +
