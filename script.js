@@ -1,7 +1,7 @@
 /* ====== EDIT DATA DI SINI ====== */
 const CLAN = {
   name: "Imperfect",
-  motto: "Satu klan, satu tujuan: menang bersama.",
+  motto: "2 + 1 = 13.",
   tag: "#2ABCD9XY",
   logo: "logo/klan.png",                 // logo klan utama (tampil di dalam perisai)
   req: "Town Hall 12 ke atas, aktif war, dan donasi rutin. Semua pemain yang mau belajar kami terima.",
