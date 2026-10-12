@@ -1,6 +1,6 @@
 /* ====== EDIT DATA DI SINI ====== */
 const CLAN = {
-  name: "Garuda Nusantara",
+  name: "Imperfect",
   motto: "Satu klan, satu tujuan: menang bersama.",
   tag: "#2ABCD9XY",
   logo: "logo/klan.png",                 // logo klan utama (tampil di dalam perisai)
