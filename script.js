@@ -27,8 +27,8 @@ const CLAN = {
   ]
 };
 // Format: "Nama|Jabatan|Town Hall|Trofi"
-const MEMBERS = `Raja Garuda|Leader|16|5420
-Bayu Pratama|Co-Leader|16|5188
+const MEMBERS = `Prabowo|Leader|16|5420
+Gibran|Co-Leader|16|5188
 Sinta Dewi|Co-Leader|15|4975
 Dimas Arya|Elder|16|4890
 Rizky Maulana|Elder|15|4802
