@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imperfect – Clan Clash of Clans</title>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="castle" viewBox="0 0 24 24"><path fill="currentColor" d="M2 21V7h4v3h3V7h6v3h3V7h4v14h-7v-5a3 3 0 0 0-6 0v5z"/></symbol></svg>
+
+<header class="allies"><div class="wrap" id="allies"></div></header>
+<div class="stripe"></div>
+
+<main>
+  <section class="hero" id="beranda">
+    <div class="wrap">
+      <div class="shield">
+        <svg viewBox="0 0 200 240" aria-hidden="true">
+          <path d="M100 8 188 40v78c0 57-38 96-88 116C50 214 12 175 12 118V40z" fill="#000" stroke="#ffd400" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M100 24 172 50v68c0 46-30 80-72 98-42-18-72-52-72-98V50z" fill="none" stroke="#d4a900" stroke-width="2"/>
+          <g class="swords" stroke="#ffd400" stroke-linecap="round"><path d="M56 66 144 154M144 66 56 154" stroke-width="9"/><path d="M48 98l22-22M152 98l-22-22" stroke-width="7"/></g>
+        </svg>
+        <img class="slogo" id="slogo" alt="Logo klan" onload="this.parentNode.classList.add('has-logo')" onerror="this.remove()">
+      </div>
+      <h1 id="clanName"></h1>
+      <p class="motto" id="motto"></p>
+      <div class="stats" id="stats"></div>
+      <div class="cta"><a class="btn" href="#gabung">Gabung klan</a><a class="btn ghost" href="#anggota">Lihat anggota</a></div>
+    </div>
+  </section>
+
+  <section id="anggota">
+    <div class="wrap">
+      <div class="head">
+        <h2>Daftar Anggota</h2>
+        <div class="tools">
+          <input id="q" type="search" placeholder="Cari nama…" aria-label="Cari nama anggota">
+          <select id="roleFilter" aria-label="Filter jabatan"><option value="">Semua jabatan</option><option>Leader</option><option>Co-Leader</option><option>Elder</option><option>Member</option></select>
+          <select id="sort" aria-label="Urutkan"><option value="no">Urutan klan</option><option value="c">Trofi tertinggi</option><option value="n">Nama A–Z</option></select>
+        </div>
+      </div>
+      <div class="cards" id="grid"></div>
+      <p class="empty" id="empty" hidden>Tidak ada anggota yang cocok. Coba kata kunci lain.</p>
+    </div>
+  </section>
+
+  <section id="war" class="alt">
+    <div class="wrap">
+      <div class="head"><h2>Riwayat War</h2><p class="sum" id="warSum"></p></div>
+      <div class="wars" id="wars"></div>
+    </div>
+  </section>
+
+  <section id="aturan">
+    <div class="wrap">
+      <div class="head"><h2>Aturan Klan</h2></div>
+      <ul class="rules" id="rules"></ul>
+    </div>
+  </section>
+
+  <section class="join" id="gabung">
+    <div class="wrap">
+      <h2>Siap jadi bagian dari kami?</h2>
+      <p id="req"></p>
+      <div class="cta">
+        <button class="btn" id="copyTag" type="button">Salin tag klan</button>
+        <a class="btn ghost" id="dc" href="#">Discord</a>
+        <a class="btn ghost" id="wa" href="#">WhatsApp</a>
+      </div>
+      <p id="copyMsg" role="status"></p>
+    </div>
+  </section>
+</main>
+<div class="stripe"></div>
+<footer>Situs penggemar. Tidak berafiliasi dengan Supercell.</footer>
+<script src="script.js"></script>
+</body>
+</html>
