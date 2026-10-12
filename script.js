@@ -3,7 +3,7 @@ const CLAN = {
   name: 'Imperfect',
   motto: '2 + 1 = 13.',
   tag: '#2ABCD9XY',
-  logo: 'logo/klan.png', // logo klan utama (tampil di dalam perisai)
+  logo: 'img/IMPERFECT.png', // logo klan utama (tampil di dalam perisai)
   req: 'Town Hall 12 ke atas, aktif war, dan donasi rutin. Semua pemain yang mau belajar kami terima.',
   whatsapp: 'https://wa.me/62812XXXXXXXX', // nomor admin (diawali 62, tanpa 0 / + / spasi)
   waGroup: 'https://chat.whatsapp.com/KODEUNDANGAN', // link undangan grup WhatsApp
@@ -13,13 +13,13 @@ const CLAN = {
   ],
   wars: [
     { lawan: 'Banteng Hitam', tgl: '10 Okt 2026', skor: '46 - 39', hasil: 'Menang' },
-    { lawan: 'Naga Api', tgl: '3 Okt 2026', skor: '41 - 44', hasil: 'Kalah' },
+    { lawan: 'Kuda kuning', tgl: '3 Okt 2026', skor: '41 - 44', hasil: 'Kalah' },
     { lawan: 'Harimau Timur', tgl: '26 Sep 2026', skor: '48 - 35', hasil: 'Menang' },
     { lawan: 'Elang Samudra', tgl: '19 Sep 2026', skor: '42 - 42', hasil: 'Seri' },
     { lawan: 'Singa Borneo', tgl: '12 Sep 2026', skor: '45 - 40', hasil: 'Menang' },
   ],
   rules: [
-    'Wajib ikut war saat sudah opt-in, dan serang minimal 1 kali.',
+    'Wajib ikut war broo, serang minimal 1 kali.',
     'Donasi pasukan secara rutin dan jangan hanya meminta.',
     'Aktif minimal 1 kali setiap 3 hari. Tidak aktif akan dikeluarkan.',
     'Hormati sesama anggota, tanpa toxic dan tanpa spam.',
@@ -27,10 +27,10 @@ const CLAN = {
   ],
 };
 // Format: "Nama|Jabatan|Town Hall|Trofi"
-const MEMBERS = `Prabowo|Leader|16|5420
-Gibran|Co-Leader|16|5188
+const MEMBERS = `PRAOWO|Leader|16|5420
+GIBRAN|Co-Leader|16|5188
 Teddy|Co-Leader|15|4975
-Dimas Arya|Elder|16|4890
+SANS|Elder|16|4890
 Rizky Maulana|Elder|15|4802
 Putri Ayu|Elder|15|4760
 Andi Saputra|Elder|14|4655
