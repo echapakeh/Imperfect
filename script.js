@@ -131,13 +131,3 @@ $('wars').innerHTML = CLAN.wars.map((w) => `<div class="war"><div><b>vs ${esc(w.
 
 // Aturan
 $('rules').innerHTML = CLAN.rules.map((r) => `<li>${esc(r)}</li>`).join('');
-
-// Salin tag
-$('copyTag').addEventListener('click', async () => {
-  try {
-    await navigator.clipboard.writeText(CLAN.tag);
-    $('copyMsg').textContent = 'Tag ' + CLAN.tag + ' disalin. Cari di Clash of Clans.';
-  } catch {
-    $('copyMsg').textContent = 'Salin manual tag klan: ' + CLAN.tag;
-  }
-});
