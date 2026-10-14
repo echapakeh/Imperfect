@@ -24,7 +24,7 @@ const CLAN = {
   ],
 };
 // Format: "Nama|Jabatan|Town Hall|Trofi"
-const MEMBERS = `PRAOWO|Leader|16|5420
+const MEMBERS = `PRABOWO|Leader|16|5420
 GIBRAN|Co-Leader|16|5188
 Teddy|Co-Leader|15|4975
 SANS|Elder|16|4890
