@@ -140,7 +140,7 @@ section.alt {
 }
 .shield {
   position: relative;
-  width: min(220px, 55vw);
+  width: min(290px, 70vw);
   margin: 0 auto 22px;
   filter: drop-shadow(0 10px 0 #6b5700);
 }
