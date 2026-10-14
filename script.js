@@ -32,41 +32,41 @@ GIBRAN|Co-Leader|16|5188
 Teddy|Co-Leader|15|4975
 SANS|Elder|16|4890
 Rizky Maulana|Elder|15|4802
-Putri Ayu|Elder|15|4760
-Andi Saputra|Elder|14|4655
-Fajar Nugroho|Elder|15|4601
-Wahyu Hidayat|Elder|14|4577
-Eko Prasetyo|Member|14|4490
-Gilang Ramadhan|Member|14|4452
-Intan Permata|Member|14|4410
-Joko Santoso|Member|13|4388
-Kevin Wijaya|Member|14|4350
-Lestari Putri|Member|13|4321
-Mario Sitorus|Member|13|4290
-Nanda Kusuma|Member|13|4255
-Oky Firmansyah|Member|13|4213
-Panji Wicaksono|Member|13|4180
-Qori Anindya|Member|13|4144
-Reza Pahlevi|Member|13|4102
-Satria Wibawa|Member|12|4066
-Tania Rahma|Member|12|4031
-Umar Faruq|Member|12|3990
-Vino Bastian|Member|12|3955
-Wulan Sari|Member|12|3921
-Xavier Lim|Member|12|3880
-Yoga Pradipta|Member|12|3844
-Zaki Mubarok|Member|12|3802
-Agus Setiawan|Member|12|3770
-Budi Hartono|Member|12|3735
-Citra Lestari|Member|12|3699
-Doni Kurniawan|Member|12|3664
-Elsa Maharani|Member|11|3620
-Farhan Alfarizi|Member|11|3585
-Galih Permana|Member|11|3540
-Hana Safira|Member|11|3502
-Ilham Syahputra|Member|11|3466
-Jihan Aulia|Member|11|3421
-Kiki Amalia|Member|11|3380`
+IMP⚡ECHA|Elder|15|4760
+IMP⚡ECHA|Elder|14|4655
+IMP⚡ECHA|Elder|15|4601
+IMP⚡ECHA|Elder|14|4577
+IMP⚡ECHA|Member|14|4490
+IMP⚡ECHA|Member|14|4452
+IMP⚡ECHA|Member|14|4410
+IMP⚡ECHA|Member|13|4388
+IMP⚡ECHA|Member|14|4350
+IMP⚡ECHA|Member|13|4321
+IMP⚡ECHA|Member|13|4290
+IMP⚡ECHA|Member|13|4255
+IMP⚡ECHA|Member|13|4213
+IMP⚡ECHA|Member|13|4180
+IMP⚡ECHA|Member|13|4144
+IMP⚡ECHA|Member|13|4102
+IMP⚡ECHA|Member|12|4066
+IMP⚡ECHA|Member|12|4031
+IMP⚡ECHA|Member|12|3990
+IMP⚡ECHA|Member|12|3955
+IMP⚡ECHA|Member|12|3921
+IMP⚡ECHA|Member|12|3880
+IMP⚡ECHA|Member|12|3844
+IMP⚡ECHA|Member|12|3802
+IMP⚡ECHA|Member|12|3770
+IMP⚡ECHA|Member|12|3735
+IMP⚡ECHA|Member|12|3699
+IMP⚡ECHA|Member|12|3664
+IMP⚡ECHA|Member|11|3620
+IMP⚡ECHA|Member|11|3585
+IMP⚡ECHA|Member|11|3540
+IMP⚡ECHA|Member|11|3502
+IMP⚡ECHA|Member|11|3466
+IMP⚡ECHA|Member|11|3421
+IMP⚡ECHA|Member|11|3380`
   .split('\n')
   .map((l, i) => {
     const [n, r, t, c] = l.split('|');
