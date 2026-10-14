@@ -2,7 +2,7 @@
 const CLAN = {
   name: 'Imperfect',
   motto: '2 + 1 = 13.',
-  tag: '#2ABCD9XY',
+  tag: '#2LCL8ROGU',
   logo: 'img/IMPERFECT.png', // logo klan utama (tampil di dalam perisai)
   req: 'Town Hall 12 ke atas, aktif war, dan donasi rutin. Semua pemain yang mau belajar kami terima.',
   whatsapp: 'https://wa.me/62812XXXXXXXX', // nomor admin (diawali 62, tanpa 0 / + / spasi)
