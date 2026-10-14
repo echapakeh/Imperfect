@@ -4,9 +4,6 @@ const CLAN = {
   motto: '2 + 1 = 13.',
   tag: '#2LCL8ROGU',
   logo: 'img/IMPERFECT.png', // logo klan utama (tampil di dalam perisai)
-  req: 'Town Hall 12 ke atas, aktif war, dan donasi rutin. Semua pemain yang mau belajar kami terima.',
-  whatsapp: 'https://wa.me/62812XXXXXXXX', // nomor admin (diawali 62, tanpa 0 / + / spasi)
-  waGroup: 'https://chat.whatsapp.com/KODEUNDANGAN', // link undangan grup WhatsApp
   allies: [
     { name: 'Macan Putih', info: 'Klan sekutu · Level 15', url: '#', logo: 'logo/macan-putih.png' },
     { name: 'Rajawali Muda', info: 'Klan sekutu · Level 12', url: '#', logo: 'logo/rajawali-muda.png' },
@@ -90,27 +87,7 @@ function fb(img) {
 document.title = CLAN.name + ' – Clan Clash of Clans';
 $('clanName').textContent = CLAN.name;
 $('motto').textContent = '“' + CLAN.motto + '”';
-$('req').textContent = CLAN.req;
 $('slogo').src = CLAN.logo;
-
-// Tombol WhatsApp (admin + grup)
-[
-  ['wa', CLAN.whatsapp],
-  ['wag', CLAN.waGroup],
-].forEach(([id, url]) => {
-  const a = $(id);
-  if (!a) return;
-  a.href = url;
-  a.target = '_blank';
-  a.rel = 'noopener noreferrer';
-  // Kalau link masih placeholder, beri tahu admin bukannya diam saja
-  if (!url || url === '#' || /XXXX|KODEUNDANGAN/.test(url)) {
-    a.addEventListener('click', (e) => {
-      e.preventDefault();
-      $('copyMsg').textContent = 'Link WhatsApp belum diisi. Edit di script.js bagian CLAN.';
-    });
-  }
-});
 
 $('allies').innerHTML =
   '<p>Klan sekutu kami</p>' +
